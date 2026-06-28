@@ -1,5 +1,6 @@
-package com.example.examplemod;
+package net.tt.mythologies;
 
+import com.example.examplemod.ExampleMod;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
