@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "build",
+  "key": {
+    "j": {
+      "item": "mythologies:jade"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "JJJ",
+    "JJJ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythologies:jade_block"
+  }
+
+}

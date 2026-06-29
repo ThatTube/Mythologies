@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MythologiesMod.MOD_ID);
 
     /*
-    * Modelo de regsitrar Blocos
+    * Modelo de registrar Blocos
     *   public static final DeferredBlock<Block> NOME_DO_BLOCO = registerBlock("nome_do_bloco",
              () ->
                   new Block(BlockBehaviour.Properties.of().strength(1f, 10f)
@@ -26,10 +26,18 @@ public class ModBlocks {
     *
     */
 
-    public static final DeferredBlock<Block> TEST_BLOCK = registerBlock("maki_block",
+    public static final DeferredBlock<Block> TEST_BLOCK = registerBlock("test_block",
             () ->
                     new Block(BlockBehaviour.Properties.of().strength(1f, 10f)
-                            .sound(SoundType.STONE).emissiveRendering((bs, br, bp) -> true)));
+                            .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> JADE_BLOCK = registerBlock("jade_block",
+            () ->
+                    new Block(BlockBehaviour.Properties.of().strength(5f, 10)
+                            .sound(SoundType.AMETHYST_CLUSTER)));
+
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
